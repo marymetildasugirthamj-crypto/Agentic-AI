@@ -1,0 +1,5 @@
+# AWS ChatOps Agent — dependencies
+streamlit>=1.36        # the chat UI
+openai>=1.30           # the gpt-4o agent brain (tool calling)
+boto3>=1.34            # real AWS calls (only used when USE_REAL_AWS=true)
+python-dotenv>=1.0     # loads OPENAI_API_KEY from .env
