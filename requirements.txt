@@ -1,9 +1,0 @@
-# Chat-FinOps Agent — dependencies
-streamlit==1.60.0      # dashboard + chat UI (1.61 + starlette 1.4 broke gzip)
-starlette<1.4          # keep gzip middleware compatible with streamlit 1.60
-pandas>=2.0            # charts & tables
-openai>=1.30           # gpt-4o
-boto3>=1.34            # AWS cost + resource APIs (read-only)
-python-dotenv>=1.0     # loads keys from .env
-langchain>=1.0         # create_agent tool-calling agent
-langchain-openai>=0.2  # OpenAI provider for LangChain
